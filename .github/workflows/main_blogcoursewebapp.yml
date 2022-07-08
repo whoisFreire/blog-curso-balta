@@ -76,6 +76,3 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B1DF023EC3E0408487D185653423A0BA }}
           package: .
-
-      - name: Delete IP Address to SQL Server
-        run: az sql server firewall-rule delete --resource-group blog --server blogcoursesqlserver --name ghactions
